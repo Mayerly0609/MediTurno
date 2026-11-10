@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="64" viewBox="0 0 72 64" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Escudo de seguridad</title>
+  <desc id="desc">Escudo azul y violeta con un candado blanco.</desc>
+  <defs>
+    <linearGradient id="shield-gradient" x1="8" y1="7" x2="66" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2454E8"/>
+      <stop offset=".53" stop-color="#5639E7"/>
+      <stop offset="1" stop-color="#783BDD"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0" cy="0" r="1" gradientTransform="matrix(26 18 -25 24 22 12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity=".3"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="72" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#3B32B5" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <path filter="url(#shadow)" d="M36 3 64 12.5v18.1C64 44.5 53 54.4 36 61 19 54.4 8 44.5 8 30.6V12.5L36 3Z" fill="url(#shield-gradient)"/>
+  <path d="M36 3 64 12.5v18.1C64 44.5 53 54.4 36 61 19 54.4 8 44.5 8 30.6V12.5L36 3Z" fill="url(#shine)"/>
+
+  <path d="M29.1 27.6v-3.3a6.9 6.9 0 0 1 13.8 0v3.3" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="25.5" y="26.5" width="21" height="17.5" rx="3.8" fill="white"/>
+  <path d="M36 31.3a2.8 2.8 0 0 0-1.4 5.2v2.8h2.8v-2.8a2.8 2.8 0 0 0-1.4-5.2Z" fill="#583BE5"/>
+</svg>

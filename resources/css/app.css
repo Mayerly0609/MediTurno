@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@import "select2/dist/css/select2.min.css";
+@import 'select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme.min.css';
+
+@import 'tabulator-tables/dist/css/tabulator_bootstrap5.min.css';
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@import 'modal.css';
+
+@import 'personalizado.css';
+@import 'projects.css';
+
+:root{
+    --bs-cerulean: #078ba3;
+    --bs-btn-color : #fff;
+}
+
+.text-cerulean {
+    color: var(--bs-cerulean) !important;
+}
+
+.bg-cerulean {
+    background-color: var(--bs-cerulean) !important;
+}
+
+.btn {
+    min-height: 40px;
+    padding: 9px 16px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color .2s, border-color .2s;
+}
+
+.btn-t1-primary {
+    color: #fff;
+    background: var(--t1-modal-primary);
+    border: 1px solid var(--t1-modal-primary);
+}
+
+.btn-t1-primary:hover {
+    color: #fff;
+    background: var(--t1-modal-primary-hover);
+    border-color: var(--t1-modal-primary-hover);
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 10px !important;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+/* Select2 múltiple: opciones en horizontal */
+.select2-container--bootstrap-5
+.select2-selection--multiple
+.select2-selection__rendered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+}
+
+.select2-container--bootstrap-5
+.select2-selection--multiple
+.select2-selection__choice {
+    width: auto;
+    margin: 2px 0;
+}
+
+
+

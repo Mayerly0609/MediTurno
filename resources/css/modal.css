@@ -1,0 +1,229 @@
+:root {
+    --t1-modal-primary: #078ba3;
+    --t1-modal-primary-hover: #067589;
+    --t1-modal-navy: #102b4e;
+    --t1-modal-text: #334155;
+    --t1-modal-muted: #718096;
+    --t1-modal-border: #dce5ee;
+    --t1-modal-section: #eaf7fa;
+    --t1-modal-background: #ffffff;
+    --t1-modal-radius: 12px;
+}
+
+/* Contenedor */
+.t1-modal .modal-content {
+    background: var(--t1-modal-background);
+    border: 1px solid rgba(15, 42, 75, 0.08);
+    border-radius: var(--t1-modal-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(15, 42, 75, 0.18);
+}
+
+/* Encabezado */
+.t1-modal .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 24px;
+    background: #fff;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.t1-modal .t1-modal-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-width: 0;
+    flex: 1;
+}
+
+.t1-modal .t1-modal-icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--t1-modal-primary);
+    background: #dff4f7;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.t1-modal .modal-title {
+    margin: 0;
+    color: var(--t1-modal-navy);
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.t1-modal .t1-modal-subtitle {
+    margin: 4px 0 0;
+    color: var(--t1-modal-muted);
+    font-size: 13px;
+}
+
+.t1-modal .btn-close {
+    margin: 0 0 0 auto;
+    padding: 8px;
+    box-shadow: none;
+}
+
+/* Cuerpo */
+.t1-modal .modal-body {
+    padding: 10px 24px;
+    max-height: 68vh;
+    overflow-y: auto;
+}
+
+/* Secciones de los formularios */
+.t1-modal .t1-modal-section {
+    margin-bottom: 15px;
+}
+
+.t1-modal .t1-modal-section:last-child {
+    margin-bottom: 0;
+}
+
+.t1-modal .t1-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    color: var(--t1-modal-primary);
+    background: var(--t1-modal-section);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.t1-modal .t1-section-heading i {
+    font-size: 15px;
+}
+
+/* Etiquetas */
+.t1-modal .form-label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--t1-modal-text);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.t1-modal .t1-required {
+    color: #e5484d;
+}
+
+/* Icono junto al input */ 
+.t1-input-icon
+{ position: relative; } 
+
+.t1-input-icon  i
+{ position: absolute; 
+    left: 13px; 
+    top: 14px; 
+    z-index: 2; 
+    color: #647b93; 
+    font-size: 13px; 
+    pointer-events: none; 
+} 
+
+.t1-input-icon .form-control,
+.t1-input-icon .form-select  
+{ padding-left: 36px; } 
+
+
+
+/* Inputs, selects y áreas de texto */
+.t1-modal .form-control,
+.t1-modal .form-select {
+    min-height: 42px;
+    border: 1px solid var(--t1-modal-border);
+    border-radius: 7px;
+    background-color: #fff;
+    color: var(--t1-modal-text);
+    font-size: 13px;
+    box-shadow: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.t1-modal textarea.form-control {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.t1-modal .form-control::placeholder {
+    color: #9aa8b8;
+}
+
+.t1-modal .form-control:focus,
+.t1-modal .form-select:focus {
+    border-color: var(--t1-modal-primary);
+    box-shadow: 0 0 0 3px rgba(7, 139, 159, .12);
+}
+
+/* Mensajes de validación */
+.t1-modal .invalid-feedback {
+    font-size: 12px;
+}
+
+.t1-modal .form-control.is-invalid,
+.t1-modal .form-select.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Pie */
+.t1-modal .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #fbfcfe;
+    padding-bottom: 0px;
+    padding-top: 1%;
+    border-top: 1px solid #e5ebf1;
+}
+
+
+
+
+
+.t1-modal .btn-t1-secondary {
+    color: #40536b;
+    background: #fff;
+    border: 1px solid var(--t1-modal-border);
+}
+
+.t1-modal .btn-t1-secondary:hover {
+    background: #f1f5f9;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 575.98px) {
+    .t1-modal .modal-header {
+        padding: 16px;
+    }
+
+    .t1-modal .modal-body {
+        padding: 16px;
+        max-height: 65vh;
+    }
+
+    .t1-modal .modal-footer {
+        padding: 14px 16px;
+    }
+
+    .t1-modal .modal-title {
+        font-size: 18px;
+    }
+
+    .t1-modal .t1-modal-icon {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .t1-modal .modal-footer .btn {
+        flex: 1;
+    }
+}

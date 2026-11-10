@@ -1,0 +1,1187 @@
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.page-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   KPI
+========================================================== */
+
+.kpi-card {
+    border-radius: 14px;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+}
+
+.kpi-label {
+    display: block;
+    color: #6b7280;
+    font-size: .82rem;
+    margin-bottom: 5px;
+}
+
+.kpi-value {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.kpi-description {
+    display: block;
+    margin-top: 4px;
+    color: #9ca3af;
+    font-size: .75rem;
+}
+
+.kpi-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 1.25rem;
+}
+
+
+/* ==========================================================
+   PROJECT CARD
+========================================================== */
+
+.projects-card {
+    overflow: hidden;
+    border: 1px solid #eef1f5;
+    border-radius: 12px;
+}
+
+
+/* ==========================================================
+   FILTERS
+========================================================== */
+
+
+.project-filters .form-control,
+.project-filters .form-select {
+    min-height: 40px;
+    border-color: #e5e7eb;
+}
+
+.project-filters .form-control:focus,
+.project-filters .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .08);
+}
+
+
+/* ==========================================================
+   DATATABLE
+========================================================== */
+
+.datatable {
+    width: 100% !important;
+}
+
+.datatable thead th {
+    padding: 14px 12px;
+
+    background: #f8fafc;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    color: #6b7280;
+
+    font-size: .76rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .03em;
+
+    white-space: nowrap;
+}
+
+.datatable tbody td {
+    padding: 15px 12px;
+
+    border-bottom: 1px solid #f1f3f5;
+
+    vertical-align: middle;
+
+    color: #374151;
+
+    font-size: .86rem;
+}
+
+.datatable tbody tr {
+    transition: background-color .15s ease;
+}
+
+.datatable tbody tr:hover {
+    background-color: #fafbfc;
+}
+
+.datatable tfoot {
+    display: none;
+
+}
+
+
+/* ==========================================================
+   PROJECT CELL
+========================================================== */
+
+.project-cell {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 260px;
+}
+
+.project-avatar {
+    width: 40px;
+    height: 40px;
+
+    min-width: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.project-name {
+    color: #1f2937;
+
+    font-weight: 600;
+    font-size: .88rem;
+
+    text-decoration: none;
+}
+
+.project-name:hover {
+    color: #4f46e5;
+}
+
+.project-description {
+    margin-top: 2px;
+
+    color: #9ca3af;
+
+    font-size: .73rem;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: 240px;
+}
+
+
+/* ==========================================================
+   PHASES
+========================================================== */
+
+.phase-list {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    min-width: 170px;
+}
+
+.phase-badge {
+    display: inline-flex;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    font-size: .68rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.phase-completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.phase-current {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.phase-more {
+    color: #6b7280;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   PROGRESS
+========================================================== */
+
+.progress-wrapper {
+    min-width: 130px;
+}
+
+.progress-value {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 5px;
+
+    color: #374151;
+
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.project-progress {
+    height: 6px;
+
+    background: #e5e7eb;
+
+    border-radius: 999px;
+}
+
+.project-progress .progress-bar {
+    border-radius: 999px;
+}
+
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.project-status {
+    font-size: .7rem;
+
+    padding: 6px 10px;
+}
+
+
+/* ==========================================================
+   ACTIONS
+========================================================== */
+
+.datatable .dropdown .btn {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 8px;
+}
+
+.datatable .dropdown-menu {
+    min-width: 180px;
+
+    border: 0;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .12);
+
+    border-radius: 10px;
+}
+
+.datatable .dropdown-item {
+    padding: 9px 14px;
+
+    font-size: .82rem;
+}
+
+
+/* ==========================================================
+   DATATABLE CONTROLS
+========================================================== */
+
+.projects-card .dataTables_wrapper {
+    padding-top: 5px;
+}
+
+.projects-card .dataTables_length label,
+.projects-card .dataTables_filter label {
+    color: #6b7280;
+    font-size: .8rem;
+}
+
+.projects-card .dataTables_length select {
+    min-width: 70px;
+
+    margin: 0 5px;
+
+    border-radius: 7px;
+}
+
+.projects-card .dataTables_filter input {
+    margin-left: 8px;
+
+    border: 1px solid #dee2e6;
+
+    border-radius: 7px;
+
+    padding: 7px 10px;
+
+    font-size: .8rem;
+}
+
+.projects-card .dataTables_info {
+    color: #6b7280;
+
+    font-size: .78rem;
+}
+
+.projects-card .pagination {
+    margin-bottom: 0;
+}
+
+.projects-card .pagination .page-link {
+    font-size: .78rem;
+
+    border-radius: 7px;
+
+    margin-left: 3px;
+}
+
+
+/* ==========================================================
+   PROCESSING
+========================================================== */
+
+.dt-processing {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+
+    color: #6b7280;
+
+    font-size: .8rem;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 991.98px) {
+
+    .page-title {
+        font-size: 1.4rem;
+    }
+
+    .project-cell {
+        min-width: 220px;
+    }
+
+    .projects-card .dataTables_filter {
+        margin-top: 10px;
+    }
+}
+
+
+/* ==========================================================
+   T1 PROYECTOS - DETALLE DEL PROYECTO
+   ========================================================== */
+
+.project-detail-page {
+    color: #0f172a;
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+
+/* .project-description {
+    margin: 5px 0 0;
+    color: #334155;
+    font-size: 13px;
+} */
+
+
+.status-active {
+    color: #008b63;
+    background: #dff7ed;
+}
+
+.status-active span {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #08a66c;
+    margin-right: 5px;
+}
+
+
+.project-action {
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    color: #071b41;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.project-action i {
+    margin-right: 7px;
+}
+
+.project-more {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    background: transparent;
+}
+
+
+/* ==========================================================
+   INFORMACIÓN GENERAL
+   ========================================================== */
+
+.project-info-card {
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 11px;
+    padding: 17px 20px;
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1fr 1fr .9fr;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    margin-bottom: 16px;
+}
+
+.project-info-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0 25px;
+    border-right: 1px solid #e5eaf0;
+}
+
+.project-info-item:first-child {
+    padding-left: 0;
+}
+
+.project-info-item:last-child {
+    border-right: 0;
+}
+
+.project-info-item > div:not(.project-avatar) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.project-info-item span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.project-info-item strong {
+    font-size: 13px;
+    color: #071b41;
+}
+
+.project-info-icon {
+    color: #0b315e;
+    font-size: 25px;
+}
+
+.project-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #e8eef5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #173b68;
+}
+
+
+/* ==========================================================
+   KPI
+   ========================================================== */
+
+.project-kpis {
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: 16px;
+}
+
+.project-kpis > div {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.project-kpi-card {
+    height: 126px;
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.kpi-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kpi-title,
+.kpi-label {
+    font-size: 14px;
+    color: #071b41;
+    font-weight: 600;
+}
+
+.kpi-main {
+    font-size: 12px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.kpi-number {
+    font-size: 27px;
+    line-height: 1;
+    color: #071b41;
+}
+
+.kpi-days {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.kpi-content a {
+    color: #1454d8;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.kpi-content small {
+    font-size: 11px;
+    color: #475569;
+}
+
+.kpi-positive {
+    color: #009b65;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.kpi-positive i {
+    margin-right: 4px;
+}
+
+
+/* Círculo */
+
+.progress-circle {
+    width: 92px;
+    height: 92px;
+    position: relative;
+}
+
+.progress-circle div {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 8;
+}
+
+.progress-circle-bg {
+    stroke: #e6edf2;
+}
+
+.progress-circle-value {
+    stroke: #079b6d;
+    stroke-dasharray: 264;
+    stroke-dashoffset: 21;
+    stroke-linecap: round;
+}
+
+.progress-circle strong {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #071b41;
+}
+
+
+#projectProgressChart {
+    width: 100%;
+    height: 100%;
+}
+
+#projectProgressChart .apexcharts-canvas {
+    margin: 0 auto;
+}
+
+/* KPI iconos */
+
+.kpi-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.kpi-icon-blue {
+    background: #e9f0ff;
+    color: #0758e8;
+}
+
+.kpi-icon-orange {
+    background: #fff2e4;
+    color: #ef8700;
+}
+
+.kpi-icon-red {
+    background: #ffe8e8;
+    color: #ef2028;
+}
+
+
+/* ==========================================================
+   CARDS
+   ========================================================== */
+
+.project-card {
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    margin-bottom: 16px;
+}
+
+
+
+.side-card-header h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #071b41;
+    margin: 0;
+}
+
+
+/* ==========================================================
+   STEPPER
+   ========================================================== */
+
+.process-card {
+    padding: 0 20px 15px;
+}
+
+.project-stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.project-stepper::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 9%;
+    right: 9%;
+    height: 2px;
+    background: #dce4ed;
+    z-index: 0;
+}
+
+.project-step {
+    position: relative;
+    z-index: 1;
+    width: 16%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e8edf3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #52627a;
+    font-size: 19px;
+    position: relative;
+    border: 5px solid #fff;
+}
+
+.project-step.completed .step-circle {
+    background: #e0f8ef;
+    color: #06966a;
+}
+
+.project-step.current .step-circle {
+    background: #1769ee;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(23, 105, 238, .25);
+}
+
+.step-check {
+    position: absolute;
+    right: -5px;
+    top: -6px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #079b6d;
+    color: #fff;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-step > strong {
+    font-size: 11px;
+    color: #071b41;
+    margin-top: 1px;
+}
+
+.project-step > b {
+    font-size: 11px;
+    color: #071b41;
+}
+
+.project-step > span {
+    font-size: 10px;
+    color: #173b68;
+}
+
+.project-step.current > span {
+    color: #0758e8;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   ACTIVIDADES
+   ========================================================== */
+
+.activities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8eef5;
+}
+
+.activity-tools {
+    display: flex;
+    gap: 10px;
+}
+
+.activity-search {
+    width: 235px;
+    height: 34px;
+    border: 1px solid #e0e6ed;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.activity-search i {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.activity-search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding-left: 8px;
+    font-size: 11px;
+}
+
+.activity-tools .btn {
+    border: 1px solid #e0e6ed;
+    color: #071b41;
+    font-size: 11px;
+}
+
+.project-activities-table {
+    margin-bottom: 0;
+}
+
+.project-activities-table thead th {
+    background: #fbfcfd;
+    color: #243653;
+    font-size: 10px;
+    font-weight: 700;
+    border-bottom: 1px solid #e8eef5;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+.project-activities-table tbody td {
+    color: #243653;
+    font-size: 10px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    border-color: #edf1f5;
+}
+
+.activity-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.activity-dot.blue {
+    background: #1769ee;
+}
+
+.activity-dot.green {
+    background: #079b6d;
+}
+
+.activity-user {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.mini-avatar {
+    width: 22px;
+    height: 22px;
+    background: #edf1f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+}
+
+.badge-project {
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.badge-progress {
+    background: #e7f0ff;
+    color: #1454d8;
+}
+
+.badge-completed {
+    background: #dff7ed;
+    color: #008b63;
+}
+
+.badge-high {
+    background: #ffe8e8;
+    color: #e21d25;
+}
+
+.badge-medium {
+    background: #fff0df;
+    color: #e27b00;
+}
+
+.badge-low {
+    background: #edf0f2;
+    color: #4b5563;
+}
+
+.btn-action {
+    border: 0;
+    background: transparent;
+    color: #071b41;
+}
+
+.activities-footer {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #64748b;
+    font-size: 10px;
+}
+
+.activities-footer a,
+.view-all-link {
+    color: #008eaa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   SIDEBAR DERECHO
+   ========================================================== */
+
+.side-card {
+    padding: 14px 17px;
+}
+
+.side-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.side-card-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.side-card-header button {
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    padding: 6px 9px;
+    font-size: 9px;
+    color: #071b41;
+}
+
+
+/* Riesgos */
+
+.risk-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.risk-item:last-child {
+    margin-bottom: 0;
+}
+
+.risk-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.risk-high {
+    background: #f0202a;
+}
+
+.risk-medium {
+    background: #ff8b00;
+}
+
+.risk-item > div {
+    flex: 1;
+}
+
+.risk-item strong {
+    display: block;
+    font-size: 10px;
+    color: #071b41;
+}
+
+.risk-item small {
+    display: block;
+    font-size: 9px;
+    color: #64748b;
+    margin-top: 3px;
+}
+
+.risk-badge {
+    font-size: 9px;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.risk-badge.high {
+    background: #ffe5e5;
+    color: #e21d25;
+}
+
+.risk-badge.medium {
+    background: #fff0df;
+    color: #e27b00;
+}
+
+
+/* Vencidas */
+
+.counter-danger {
+    background: #ffe5e5;
+    color: #e21d25;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.overdue-item strong {
+    display: block;
+    font-size: 10px;
+    color: #071b41;
+}
+
+.overdue-item span {
+    display: block;
+    color: #e21d25;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+
+/* Recientes */
+
+.recent-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.recent-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.recent-dot.green {
+    background: #079b6d;
+}
+
+.recent-dot.blue {
+    background: #1769ee;
+}
+
+.recent-dot.gray {
+    background: #aeb9c9;
+}
+
+.recent-item div {
+    flex: 1;
+}
+
+.recent-item strong {
+    display: block;
+    font-size: 10px;
+    color: #071b41;
+}
+
+.recent-item small {
+    display: block;
+    font-size: 9px;
+    color: #64748b;
+    margin-top: 3px;
+}
+
+.recent-item time {
+    white-space: nowrap;
+    color: #334155;
+    font-size: 8px;
+}
+
+.view-all-link {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+/* ==========================================================
+   TIP
+   ========================================================== */
+
+.project-tip {
+    max-width: 575px;
+    background: #e8f7fd;
+    border: 1px solid #d2edf6;
+    border-radius: 8px;
+    padding: 10px 13px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    color: #087a9a;
+    font-size: 10px;
+}
+
+.project-tip i {
+    font-size: 16px;
+}
